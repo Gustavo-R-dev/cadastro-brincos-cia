@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Cadastro - Brincos e Companhia</title> 
+</head> 
+<body> 
+
+    <h1>Brincos e Companhia</h1>
+    <h2>Cadastro de Novos Colaboradores</h2>
+
+    <form id="formCadastro" name="formCadastro" method="post" action="processaCadastro.php"> 
+        <p>
+            <label for="nome">Nome Completo:</label><br>
+            <input name="nome" type="text" id="nome" placeholder="Digitar Nome" required>
+        </p>
+
+        <p>
+            <label for="idade">Idade:</label><br>
+            <input name="idade" type="number" id="idade" placeholder="Ex.: 18" required>
+        </p>
+
+        <p>
+            <label for="profi">Profissão:</label><br>
+            <input name="profi" type="text" id="profi" placeholder="Ex: Vendedor" required>
+        </p>
+
+        <p>
+            <label for="sal_pret">Salário Pretendido (R$):</label><br>
+            <input name="sal_pret" type="number" step="0.01" id="sal_pret" placeholder="Ex: 1500.00" required>
+        </p>
+
+        <p>
+            <label for="exp_ant">Experiência Anterior:</label><br>
+            <input name="exp_ant" type="text" id="exp_ant" placeholder="Ex: Atendimento ao cliente" required>
+        </p>
+
+        <input name="Enviar" type="submit" id="enviar" value="Cadastrar Colaborador"> 
+    </form> 
+
+</body> 
+</html>
